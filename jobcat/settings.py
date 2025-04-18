@@ -76,8 +76,13 @@ WSGI_APPLICATION = 'jobcat.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'jobcat',  # Replace with your Database Name
+        'USER': 'jobcat_user',    # Replace with your Username
+        'PASSWORD': 'UUwd2mxWZYhHdcPFvWl2hQtMlY85Y4Am',  # Replace with your Password
+        'HOST': 'host.oregon-postgres.render.com',  # Replace with your Host
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
 
