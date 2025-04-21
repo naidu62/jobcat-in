@@ -23,7 +23,7 @@ DATABASES = {
         'URL': os.environ.get('DATABASE_URL'),
     }
 }
-
+ROOT_URLCONF = 'jobcat.urls'
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
