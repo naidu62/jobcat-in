@@ -71,3 +71,4 @@ TEMPLATES = [
         },
     },
 ]
+'WSGI_APPLICATION' 
